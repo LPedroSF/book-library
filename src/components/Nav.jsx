@@ -29,6 +29,11 @@ const Nav = ({ numberOfItems }) => {
               Books
             </Link>
           </li>
+          <li className="nav__list">
+            <Link to="/login" className="nav__link">
+              <FontAwesomeIcon icon="fa-solid fa-user" />
+            </Link>
+          </li>
           <button className="btn__menu" onClick={openMenu}>
             <FontAwesomeIcon icon="bars" />
           </button>
@@ -55,6 +60,11 @@ const Nav = ({ numberOfItems }) => {
             <li className="menu__list">
               <Link to="/books" className="menu__link" onClick={closeMenu}>
                 Books
+              </Link>
+            </li>
+            <li className="menu__list">
+              <Link to="/login" className="menu__link" onClick={closeMenu}>
+                Profile
               </Link>
             </li>
             <li className="menu__list">
