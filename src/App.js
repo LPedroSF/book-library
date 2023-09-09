@@ -3,11 +3,13 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Books from "./pages/Books";
 import BookInfo from "./pages/BookInfo";
+import Login from "./pages/Login";
 import { books } from "./data";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Cart from "./pages/Cart";
 import { counter } from "@fortawesome/fontawesome-svg-core";
+import Register from "./pages/Register";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -83,6 +85,8 @@ function App() {
         <Nav numberOfItems={numberOfItems()} />
         <Route path="/" exact render={() => <Home books={books} />} />
         <Route path="/books" exact render={() => <Books books={books} />} />
+        <Route path="/login" exact render={() => <Login />} />
+        <Route path="/register" exact render={() => <Register />} />
         <Route
           path="/books/:id"
           render={() => (

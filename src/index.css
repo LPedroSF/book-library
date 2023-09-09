@@ -490,11 +490,9 @@ footer {
 }
 
 /* 
-**
 
 BOOKS PAGE
 
-**
 */
 
 #books__body {
@@ -558,7 +556,6 @@ select {
 }
 
 /* 
-
   book/:id
     
 */
@@ -639,6 +636,79 @@ select {
 .link__breadcrumbs {
   color: #bfbfbf;
   margin-bottom: 16px;
+}
+
+/*
+
+  PROFILE
+
+*/
+
+.login__body{
+  padding: 16px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.login__image{
+  width: 100%;
+  padding: 16px;
+}
+
+.login{
+  padding: 16px;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.login--title{
+  text-align: center;
+  padding: 16px;
+  font-size: 32px;
+}
+
+.login--container{
+  background-color: #7342d617;
+  border-radius: 16px;
+  padding: 16px;
+  width: 70%;
+}
+
+.login--contents{
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.login--details{
+  font-size: 20px;
+  padding: 16px;
+}
+
+.login--textbox{
+  border: solid 2px #7342d6;
+  border-radius: 16px;
+  color: #7342d6;
+  margin: 16px 0;
+}
+
+.login--btns{
+  display: flex;
+  justify-content: center;
+}
+
+.login--btn{
+  margin: 16px;
+  width: 100%;
+  border: 16px;
+  background-color: #7342d6;
+  color: white;
+  border-radius: 16px;
 }
 
 /* 
@@ -767,6 +837,23 @@ select {
   padding: 12px 0;
 }
 
+/* SMALL MONIOTORS */
+
+@media (max-width: 1100px) {
+  .login__body{
+    flex-direction: column;
+  }
+
+  .login__image{
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .login{
+    margin-top: 16px;
+  }
+}
+
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
 @media (max-width: 768px) {
   .header__description {
@@ -799,6 +886,14 @@ select {
   .book__selected--description {
     width: 100%;
   }
+
+  .login--title{
+    font-size: 24px;
+  }
+
+  .login--details{
+    font-size: 16px;
+  }
 }
 
 
@@ -825,5 +920,9 @@ select {
   }
   .cart__book--info {
     padding-left: 0;
+  }
+
+  .login--details{
+    padding: 8px;
   }
 }
